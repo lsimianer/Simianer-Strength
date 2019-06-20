@@ -1,0 +1,107 @@
+body{
+    background-color: #000000;
+    color: whitesmoke;
+
+}
+
+
+
+/* particle js styling starts */
+canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+.count-particles{ background: #000022; position: absolute; top: 48px; left: 0; 
+    width: 80px; color: #13E8E9; font-size: .8em; text-align: left; 
+    text-indent: 4px; line-height: 14px; padding-bottom: 2px; 
+    font-family: Helvetica, Arial, sans-serif; font-weight: bold; 
+} 
+.js-count-particles{ font-size: 1.1em; 
+} 
+#stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; 
+}
+ #stats{ border-radius: 3px 3px 0 0; overflow: hidden;
+ } 
+.count-particles{ border-radius: 0 0 3px 3px; 
+}
+/* particle js styling ends */
+
+#loginDiv {
+    position: absolute;
+	top: 40%;
+	right: 36%;
+}
+
+input{
+    color: white;
+}
+
+#submit{
+    margin-left: 42%;
+    background-color: black;
+    color: darkgreen;
+    border-radius: 7px;
+    border-color:transparent;
+}
+
+#submit:hover{
+    background-color: black;
+    color: darkgoldenrod;
+    border-color: gold;
+}
+
+#create{
+    margin-left: 33%;
+    background-color: black;
+    color: darkgreen;
+    border-radius: 7px;
+    border-color:transparent;
+}
+
+#create:hover{
+    background-color: black;
+    color: darkgoldenrod;
+    border-color: gold;
+    animation: shake 1.90s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+form:hover{
+    color: black;
+}
+
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes bouncing {
+    0%, 50%, 100% { /* OR from, 50%, to */
+        top: 0;
+    }
+    25%, 75% {
+        top: 100px;
+    }
+
+}
