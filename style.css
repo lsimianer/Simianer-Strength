@@ -49,6 +49,8 @@ input{
     color: darkgreen;
     border-radius: 7px;
     border-color:transparent;
+    font-family: 'Anton', sans-serif;
+
 }
 
 #submit:hover{
@@ -63,6 +65,8 @@ input{
     color: darkgreen;
     border-radius: 7px;
     border-color:transparent;
+    font-family: 'Anton', sans-serif;
+
 }
 
 #create:hover{
@@ -74,8 +78,13 @@ input{
 
 form:hover{
     color: black;
-}
+    font-family: 'Anton', sans-serif;
 
+}
+ form{
+    font-family: 'Anton', sans-serif;
+
+ }
 
 
 @keyframes shake {
