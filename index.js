@@ -11,3 +11,10 @@ $( document ).ready(function() {
 });
 
 
+$("#submit").on("click",function(event){  
+    event.preventDefault();
+})
+
+$("#create").on("click",function(event){  
+    event.preventDefault();
+})
