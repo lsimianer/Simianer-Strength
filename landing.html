@@ -6,13 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simianer Strength Home</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <!-- CSS -->
-    <link href="landing.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap.css" type="text/css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- <script src="util.js" type="text/javascript" ></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>        
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- jQuery -->
@@ -24,43 +21,63 @@
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
     <!-- add moment -->
     <script src="https://momentjs.com/downloads/moment.js"></script>
+    <!-- CSS -->
+    <link href="landing.css" type="text/css" rel="stylesheet">
     <!-- validate -->
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a  url="https://i.ibb.co/4R9ytC9/Logo-Makr-8-F2-Zcz.png" class="brand-logo">Simianer Strength</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a class="Active" href="landing.html">Home</a></li>
-                <li><a class="Passive" href="workouts.html">Lift</a></li>
-                <li><a class="Passive" href="nutrition.html">Nutrition</a></li>
-                <li><a class="Passive" href="ethos.html">Ethos</a></li>
-            </ul>
-        </div>
+    <nav id="mynav" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="navbar-left"><img id="logo" src="https://i.ibb.co/4R9ytC9/Logo-Makr-8-F2-Zcz.png"></a>
+            <!-- <a class="navbar-brand" > <img="https://i.ibb.co/4R9ytC9/Logo-Makr-8-F2-Zcz.png"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="landing.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workouts.html">Lift</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ethos.html">Ethos</a>
+                </li>
+                </ul>
+            </div>
     </nav>
 
     <div id="mainBody" class="container">
-            <h3>Welcome to Simianer Strength</h3>
-            <br>
-            <p id="introText">
-                In a world of youtube crazed, science defying, and fad based lifting programs 
-                preached by men who barely bench bodyweight or think scoliosis for time is a good WOD 
-                for beginners, I welcome you to a bit of clarity.
-                <br>
-                I make no claim to be an expert, instead I own that I'm a well rounded man and lifter
-                who has not only read the books but done the deeds. If I had a fitness resume it would consist 
-                of some feats im pretty proud of such as:
-                <ul>
-                    <li>I lost over 100lbs in a 2.5 year span.</li>
-                    <li>While losing that 100lbs+ I increased all three lifts</li>
+        <div class="row">
+            <div class="col-sm-12" >
+                    <h3>Welcome to Simianer Strength</h3>
+                    <br>
+                    <p id="introText">
+                        In a world of youtube crazed, science defying, and fad based lifting programs 
+                        preached by men who barely bench bodyweight or think scoliosis for time is a good WOD 
+                        for beginners, I welcome you to a bit of clarity.
+                        <br>
+                        I make no claim to be an expert, instead I own that I'm a well rounded man and lifter
+                        who has not only read the books but done the deeds. If I had a fitness resume it would consist 
+                        of some feats im pretty proud of such as:
                         <ul>
+                            <li>I lost over 100lbs in a 2.5 year span.</li>
+                            <li>While losing that 100lbs+ I increased all three lifts</li>                                
                             <li> Bench 135lb to 375lb</li>
                             <li>Squat 95lb to 545lb</li>
                             <li>Deadlift 185lb to 605lb</li>
+                            <li>While doing this I attended nursing school full time and never failed to make the Deans' or President's list</li>
                         </ul>
-                    <li>While doing this I attneded nursing school full time and never failed to make the Deans' or President's list</li>
-                </ul>
-            </p>
+                    </p>
+            </div>
+        </div>
+        <div class="row">
+
+                
+            
             <p id="emphasis"> 
                 The purpose of Simianer Strength is twofold; to share the lessons learned and the way
                 my life has been changed on this journey. Aditionally I am a Fullstack Developer now and 
@@ -69,11 +86,7 @@
     
         </div>
 
-    <div  id="particleBG">
-        <div id="particles-js"></div>                      
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>  
-        <script src="https://threejs.org/examples/js/libs/stats.min.js"></script> 
-    </div>
+    
 
     
   

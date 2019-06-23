@@ -5,12 +5,13 @@ body{
 }
 
 
-nav{
-    background-color: black;
+#mynav{
+    background-color: rgb(233, 220, 220);
     font-family: 'Anton', sans-serif;
     overflow: auto;
 
 }
+
 
 nav ul a {
     font-size: 1.5rem;
@@ -18,7 +19,6 @@ nav ul a {
 
 nav ul a:hover {
     font-size: 1.75rem;
-    color: goldenrod;
 }
 
 .Active{
@@ -32,9 +32,23 @@ text-shadow: 1.5px 0.5px rgb(237, 241, 237);
 
 }
 
+#logo {
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+}
+
 /* begin carosel madness */
 
-@media (min-width: 768px) {
+/* .carousel-inner > .item >img{
+    min-height : 300px;
+    max-height : 300px;
+    width : 100%;
+  } */
+
+  @media (min-width: 768px) {
     /* show 3 items */
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
@@ -95,3 +109,10 @@ text-shadow: 1.5px 0.5px rgb(237, 241, 237);
       visibility: visible;
     }
   }
+
+  #mbContainer{
+      width: 100%;
+      height: 100%;
+  }
+
+  
