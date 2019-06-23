@@ -12,6 +12,26 @@ nav{
 
 }
 
+nav ul a {
+    font-size: 1.5rem;
+}
+
+nav ul a:hover {
+    font-size: 1.75rem;
+    color: goldenrod;
+}
+
+.Active{
+color: rgb(8, 8, 8);
+/* background: white; */
+text-shadow: 1.5px 0.5px rgb(237, 241, 237);
+}
+
+.Passive{
+    color: whitesmoke;
+
+}
+
 #mainBody{
     color: white;
     position: absolute;
